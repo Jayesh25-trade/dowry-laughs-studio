@@ -30,7 +30,7 @@ const Index = () => {
       <section ref={ref} className="relative h-[100vh] overflow-hidden">
         <div className="absolute inset-0">
           <Suspense fallback={<div className="absolute inset-0 gradient-noir" />}>
-            <HeroScene />
+            <HeroScene scrollProgress={scrollYProgress} />
           </Suspense>
         </div>
         <motion.div style={{ y, opacity }} className="relative z-10 h-full flex items-center justify-center pointer-events-none">
