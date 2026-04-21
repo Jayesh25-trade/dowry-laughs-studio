@@ -1,6 +1,7 @@
 import { NavLink, Outlet, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Phone, ShieldAlert } from "lucide-react";
+import { BgmPlayer } from "@/components/BgmPlayer";
 
 const links = [
   { to: "/", label: "Home" },
@@ -97,5 +98,6 @@ export const Layout = () => (
       <Outlet />
     </motion.main>
     <Footer />
+    <BgmPlayer />
   </div>
 );
